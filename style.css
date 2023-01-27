@@ -95,19 +95,18 @@
 .ex-9-img {
   margin: 50px 100px;
   width: 400px;
-  transition: filter 2s ease-in;
-  transition: transform 3s ease-in;
+  transition: transform 3s linear;
+  transition: filter 3s ease-in;
   transition: border-radius 3s ease-in;
 }
 
 .ex-9-img:hover{
+  transform: scale(1.3,1.3);
   filter: grayscale(100%);
   filter: contrast(200%);
   border-radius: 25px;
-  transform: scale(1.3,1.3);
-
-
 }
+
 
 
 @keyframes ruota-infinito{
@@ -128,7 +127,7 @@
 
 @keyframes ruota{
   0%{transform: rotate(0deg);}
-  50%{transform: rotate(270deg);}
+  75%{transform: rotate(270deg);}
   100%{transform: rotate(0deg);}
 }
 
@@ -146,19 +145,19 @@
 
 @keyframes gira1 {
   0%   {left:19px; top:-10px;}
-  20%  {left:150px; top:-10px;}
-  40%  {left:150px; top:55px;}
-  60%  {left:-10px; top:55px;}
-  80% {left:-10px; top:-10px;}
+  33%  {left:150px; top:-10px;}
+  46%  {left:150px; top:55px;}
+  83%  {left:-10px; top:55px;}
+  96% {left:-10px; top:-10px;}
   100%{left:19px; top:-10px}
 }
 
 @keyframes gira2 {
   0%   {left:95px; top:55px;}
-  20%  {left:-10px; top:55px;}
-  40%  {left:-10px; top:-10px;}
-  60%  {left:150px; top:-10px;}
-  80% {left:150px; top:55px;}
+  33%  {left:-10px; top:55px;}
+  46%  {left:-10px; top:-10px;}
+  83%  {left:150px; top:-10px;}
+  96% {left:150px; top:55px;}
   100%{left:95px; top:55px}
 }
 
